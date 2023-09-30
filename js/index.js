@@ -96,6 +96,9 @@ let closeMenu = function () {
 projectWrapper.addEventListener("click", function (e) {
   console.log(e.target.classList)
   if (e.target.classList.contains("project__box")) {
+    if(e.target.querySelector('a').getAttribute('href') === '#') {
+      return;
+    }
     e.target.querySelector('a').click();
     return;
     
