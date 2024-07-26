@@ -724,6 +724,10 @@ Media Queries
 
 -------*/
 @media (min-width: 769px) {
+  .project__heading {
+    padding-left: 1.4em;
+  }
+
   .footer__child__title {
     grid-column: span 2;
     margin-bottom: 1rem;

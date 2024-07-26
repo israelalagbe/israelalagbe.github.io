@@ -608,10 +608,10 @@ function onParticleLoaded() {
               "angular",
               "laravel",
               "vue",
-              "c",
-              "l",
-              "e",
-              "s"
+              "go",
+              "php",
+              "ts",
+              "node"
             ],
             "font": "Verdana",
             "style": "",
