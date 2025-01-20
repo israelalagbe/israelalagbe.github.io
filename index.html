@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="194x194" href="icons/favicon-194x194.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="manifest" href="icons/site.webmanifest" />
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#000000" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Fullstack Software Engineer" />
+  <meta property="og:image" content="https://israelalagbe.tech/images/screenshot.png">
+  <meta name="twitter:image" content="https://israelalagbe.tech/images/screenshot.png">
+  <meta name="twitter:title" content="Fullstack Software Engineer" />
+  <title>Alagbe Israel (AI.)</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxygen:wght@200;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEX8RD69NQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TEX8RD69NQ');
+    
+    function onSubmit(token) {
+        
+    }
+    var validate = function(event) {
+        event.preventDefault()
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LemgpwhAAAAABo3OZgbFQxVZMDqlUxF0BdA5VzX', {action: 'submit'}).then(function(token) {
+              if(token) {
+                document.getElementById("contactForm").onsubmit=function() {}
+                document.getElementById("contactForm").setAttribute('action', "https://formspree.io/f/xyylyerq")
+                document.getElementById("contactForm").submit();
+              }
+              
+          });
+        });
+    };
+    function onloadCallback() {
+      var element = document.getElementById('contactForm');
+      element.onsubmit = validate;
+      
+      document.getElementById('submitButton').removeAttribute('disabled')
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <div id="tsparticles"></div>
+  <section class="head">
+
+    <header class="header">
+      <div class="header__left">
+        <a href="#"><img src="icons/logo.svg" alt="Logo" class="header__logo" /></a>
+      </div>
+      <div class="header__middle">
+        <img src="icons/close-black.svg" alt="Close Icon" class="header__close" />
+        <ul>
+          <li>
+            <a>
+              <img src="icons/logo-black.svg" alt="Logo" class="header__logo" /></a>
+          </li>
+          <li><a href="#project" class="header__link">My Projects</a></li>
+          <!-- <li><a href="docs/AlagbeIsrealCV.pdf" download class="header__link">My Resume</a></li> -->
+          <li><a href="#footer" class="header__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <img src="icons/menu.svg" alt="Menu Icon" class="header__menu" />
+      </div>
+    </header>
+
+    <section class="landing">
+
+      <h1 class="landing__header animated fadeInUp">
+        <span>Hi,</span> I'm Israel
+      </h1>
+      <div class="landing__paragraph-con">
+        <!-- I started from scratch again and I realized I'm great at what I do -->
+        <p class="landing__paragraph animated fadeInUp">
+          A Full-Stack Engineer with 7+ years of professional experience building scalable web applications and tools that boost efficiency. Passionate about building intuitive products that make people's lives easier. Has a proven track record of exceeding expectations, attention to detail and ability to handle a full development life-cycle from start to finish.
+        </p>
+      </div>
+      <a class='arrow' href="#project"></a>
+      <div class="landing__footer animated fadeInDown">
+        <a href="https://github.com/israelalagbe" target="_blank"><img src="icons/github.png"
+            alt="Github Icon" /></a>
+        <a href="https://www.linkedin.com/in/israelalagbe/" target="_blank"><img
+            src="icons/linkedin.png" alt="Linkedin Icon" /></a>
+        <a href="https://twitter.com/IsraelAlagbe" target="_blank"><img src="icons/twitter.svg"
+            alt="Twitter Icon" /></a>
+
+      </div>
+    </section>
+
+    <img src="icons/1.svg" alt="" class="landing__icon landing__icon--1">
+    <img src="icons/2.svg" alt="" class="landing__icon landing__icon--2">
+    <img src="icons/3.svg" alt="" class="landing__icon landing__icon--3">
+    <img src="icons/4.svg" alt="" class="landing__icon landing__icon--4">
+    <img src="icons/5.svg" alt="" class="landing__icon landing__icon--5">
+    <img src="icons/6.svg" alt="" class="landing__icon landing__icon--6">
+  </section>
+  <section class="project" id="project">
+    <h2 class="heading project__heading">
+      <span>Notable Projects</span>
+    </h2>
+    <div class="project__wrapper">
+      <div class="project__box shuttlers" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="https://www.shuttlers.africa/" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">Shuttlers</h3>
+        </div>
+      </div>
+      <div class="project__box cobanking" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="#" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">Riby Cobanking</h3>
+        </div>
+      </div>
+      <div class="project__box skooleo" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="#" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">Skooleeo</h3>
+        </div>
+      </div>
+      <div class="project__box agent" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="#" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="project__details">Riby Agent</h3>
+        </div>
+      </div>
+      <div class="project__box jetseta" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="https://jetseta.com/" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">Jetseta</h3>
+        </div>
+      </div>
+      <div class="project__box subomi" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="https://subomiplumptre.com/" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">Subomi Plumptre</h3>
+        </div>
+      </div>
+      <div class="project__box ridetru" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="#" target="_blank"><img src="/icons/link.svg"
+              alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">RideTru</h3>
+        </div>
+      </div>
+      <div class="project__box yard" data-aos="fade-up" data-aos-delay="40">
+        <div class="project__image"></div>
+        <div class="project__overlay"></div>
+        <div class="project__link">
+          <a href="#" target="_blank"><img src="/icons/link.svg" alt="link icon" /></a>
+        </div>
+        <div class="project__content">
+          <h3 class="heading-3 mb-l">The Yard</h3>
+        </div>
+      </div>
+    </div>
+    <section class="modal-section">
+    </section>
+  </section>
+  <footer class="footer grid-container" id="footer">
+      <div class="footer__child__title">
+        <h1 class="heading footer__heading"><span>Contact Me</span></h1>
+      </div>
+      <div class="footer__child__left">
+        <div class="footer__child footer__child--1">
+          <p class="footer__paragraph">
+            I am currently open to job opportunities and would also welcome the chance to meet for coffee. Please feel free to reach out to me via the contact form on my website or through any of my social media profiles.
+          </p>
+          <div class="footer__icon-con">
+  
+  
+            <a href="https://github.com/israelalagbe" target="_blank">
+              <img class="footer__icon" src="icons/github.png" alt="Github Icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/israelalagbe/" target="_blank">
+              <img src="icons/linkedin.png" alt="Linkedin Icon" class="footer__icon" />
+            </a>
+            <a href="https://twitter.com/IsraelAlagbe" target="_blank">
+              <img src="icons/twitter.svg" alt="Twitter Icon" class="footer__icon" />
+            </a>
+  
+  
+          </div>
+        </div>
+      </div>
+      <div class="footer__child__right">
+        <div class="footer__child footer__chold--2">
+          <form  action="?" class="footer__form" id="contactForm"
+            method="POST" target="_blank">
+            <input required name="name" type="text" class="footer__form-name footer__form-input"
+              placeholder="Your Name" />
+            <input required name="email" type="email" class="footer__form-email footer__form-input"
+              placeholder="Email" />
+            <textarea required name="message" class="footer__form-input footer__form-message"
+              placeholder="Your Message"></textarea>
+            <input id="submitButton" type="submit" class="footer__form-submit" disabled />
+          </form>
+        </div>
+    </div>
+  </footer>
+  <script async defer src="https://www.google.com/recaptcha/api.js?render=6LemgpwhAAAAABo3OZgbFQxVZMDqlUxF0BdA5VzX"></script>
+  <script>onloadCallback();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/index.js"></script>
+  
+  <script onload="onParticleLoaded()"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.25.0/tsparticles.min.js"
+    integrity="sha512-2BfZ4oaKTDUwW+xysJUCEt681NP41iXfQgc7FrCoq1AxAOLQ0d/yCBOvO+FotBbABTPn7ICa3GhlJ6w/+xa/jA=="
+    crossorigin="anonymous" async></script>
+  
+</body>
+
+</html>
