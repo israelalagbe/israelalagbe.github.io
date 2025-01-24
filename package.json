@@ -1,0 +1,13 @@
+{
+  "name": "alagbeisreal",
+  "version": "1.0.0",
+  "description": "Alagbe Isreal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass sass/main.scss css/style.css -w"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
