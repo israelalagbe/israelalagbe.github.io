@@ -9,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.83.4"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Israel Alagbe",
+      "description": "Main contributor"
+    },
+    {
+      "name": "Oladetoun Temitayo",
+      "description": "Made contributions to the initial design"
+    }
+  ]
 }
